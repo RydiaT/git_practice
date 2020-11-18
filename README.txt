@@ -1,3 +1,2 @@
-Hello Git and GitHub
-Why isn't this working?
-This is a test line
+This is what I'll use to practice with GitHub, Git, and general
+coding efforts.
