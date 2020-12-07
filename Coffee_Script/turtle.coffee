@@ -1,11 +1,12 @@
+###
 turt = new Turtle red
 #Game Prep
 #Allows you to move
-moveWithWASD = (speed = 25) ->
+moveWithWASD = (dis = 25) ->
   for x in [0...1]
-    keydown 'W', -> (fd speed)
+    keydown 'W', -> fd dis
     keydown 'A', -> lt 90
-    keydown 'S', -> bk speed
+    keydown 'S', -> bk dis
     keydown 'D', -> rt 90
 #Allows you to draw with turtle
 drawWithTurt = () ->
@@ -19,19 +20,19 @@ turtleName = () ->
   say 'Hello, my name is ' + name
 #Names the red turtle
 bobName = () ->
-  name = prompt "Name the second turt! His name's bob but you can change it."
+  name = prompt "Name the second turt! His name's Bob but you can change it."
   turt.say 'And my name is ' + name
 #Second turtle actions
-bobMovements = (speed = 25) ->
+bobMovements = (dis = 25) ->
   forever 1, ->
     num = random 4
     switch num
-      when 0 then turt.fd speed
-      when 1 then turt.bk speed
+      when 0 then turt.fd dis
+      when 1 then turt.bk dis
       when 2 then turt.lt random 100
       when 3 then turt.rt random 100
     if touches(turt)
-      turt.fd speed
+      turt.fd dis
 #Runs game elements
 runTurtle = (y) ->
   turtleName()
@@ -40,4 +41,35 @@ runTurtle = (y) ->
   bobName()
   bobMovements(y)
 #End Game Prep
-runTurtle()
+runTurtle(50)
+###
+#Start Calculations
+#Saves user input
+getStats = () ->
+  x = prompt 'What is the degree that you want to convert?'
+  y = prompt 'What do you want to convert from? Make sure to capitalise it!'
+  z = prompt 'What do you want to convert to? Make sure to capitalise it!'
+  return x y z
+#Preforms calculations
+preformCalcs = () ->
+    switch
+      when y = 'Fahrenheit' and z = 'Celsius'
+        answer = (x - 32) / 1.8
+      when y = 'Fahrenheit' and z = 'Kelvin'
+        answer = (x + 459.67) * 5/9
+      when y = 'Celsius' and z = 'Fahrenheit'
+        answer = x * 1.8 + 32
+      when y = 'Celsius' and z = 'Kelvin'
+        answer = x + 273.15
+      when y = 'Kelvin' and z = 'Fahrenheit'
+        answer = x * 9/5 - 459.67
+      when y = 'Kelvin' and z - 'Celsius'
+        answer = x - 273.15
+    return answer
+#End Calculations
+#Runs everything
+finishedProduct = () ->
+  getStats()
+  preformCalcs()
+
+
