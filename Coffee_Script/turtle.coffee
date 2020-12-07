@@ -24,20 +24,14 @@ bobName = () ->
 #Second turtle actions
 bobMovements = (speed = 25) ->
   forever 1, ->
-    num = round random 4
-    write num
-    if num = 0
-      turt.fd random speed++
-    else if num = 1
-      turt.rt random 100
-    else if num = 2
-      turt.lt random 100
-    else if num = 3
-      turt.bk random speed++
-    else if num = 4
-      turt.say 'How did I land 4?'
-  if touches(turt)
-    turt.fd speed
+    num = random 4
+    switch num
+      when 0 then turt.fd speed
+      when 1 then turt.bk speed
+      when 2 then turt.lt random 100
+      when 3 then turt.rt random 100
+    if touches(turt)
+      turt.fd speed
 #Runs game elements
 runTurtle = (y) ->
   turtleName()
