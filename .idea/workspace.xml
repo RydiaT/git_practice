@@ -59,7 +59,7 @@
       <workItem from="1606701282908" duration="2052000" />
       <workItem from="1607276349468" duration="4727000" />
       <workItem from="1607284905882" duration="153000" />
-      <workItem from="1607285143799" duration="13382000" />
+      <workItem from="1607285143799" duration="15525000" />
     </task>
     <task id="LOCAL-00001" summary="Working out Bob's movements">
       <created>1607284746012</created>
@@ -75,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607302373124</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added temp calcs">
+      <created>1607384740547</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607384740547</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,6 +103,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Working out Bob's movements" />
     <MESSAGE value="Fixed moving" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed moving" />
+    <MESSAGE value="Added temp calcs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added temp calcs" />
   </component>
 </project>

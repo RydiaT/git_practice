@@ -62,14 +62,31 @@ preformCalcs = () ->
       when y = 'Celsius' and z = 'Kelvin'
         answer = x + 273.15
       when y = 'Kelvin' and z = 'Fahrenheit'
-        answer = x * 9/5 - 459.67
+        answer = x * 1.8 - 459.67
       when y = 'Kelvin' and z - 'Celsius'
         answer = x - 273.15
     return answer
+#Shows work
+showWork = () ->
+  switch
+    when y = 'Fahrenheit' and z = 'Celsius'
+      write x + '° Fahrenheit to Celsius is: (' + x + ' - 32) / 1.8'
+    when y = 'Fahrenheit' and z = 'Kelvin'
+      write x + '° Fahrenheit to Kelvin is: (' + x + ' + 459.67) * 5/9'
+    when y = 'Celsius' and z = 'Fahrenheit'
+      write x + '° Celsius to Fahrenheit is: ' + x + ' * 1.8 + 32'
+    when y = 'Celsius' and z = 'Kelvin'
+      write x + '° Celsius to Kelvin is: ' + x + ' + 273.15'
+    when y = 'Kelvin' and z = 'Fahrenheit'
+      write x + '° Kelvin to Fahrenheit is: ' + x + ' * 1.8 - 459.67'
+    when y = 'Kelvin' and z - 'Celsius'
+      write x + '° Kelvin to Celsius is: (' + x + ' - 273.15'
 #End Calculations
 #Runs everything
 finishedProduct = () ->
   getStats()
   preformCalcs()
+  showWork()
+finishedProduct()
 
 
