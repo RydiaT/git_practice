@@ -49,7 +49,9 @@ getStats = () ->
   x = prompt 'What is the degree that you want to convert?'
   y = prompt 'What do you want to convert from? Make sure to capitalise it!'
   z = prompt 'What do you want to convert to? Make sure to capitalise it!'
-  return x y z
+  return x
+  return y
+  return z
 #Preforms calculations
 preformCalcs = () ->
     switch
