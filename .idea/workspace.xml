@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa7f2de1-cc5c-47f5-a167-6edfaa1b4bfd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Coffee_Script/IDEK.coffee" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coffee_Script/IDEK.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/Coffee_Script/IDEK.coffee" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +61,7 @@
       <workItem from="1607284905882" duration="153000" />
       <workItem from="1607285143799" duration="15525000" />
       <workItem from="1608081216630" duration="2002000" />
-      <workItem from="1609167313398" duration="2675000" />
+      <workItem from="1609167313398" duration="5686000" />
     </task>
     <task id="LOCAL-00001" summary="Working out Bob's movements">
       <created>1607284746012</created>
@@ -84,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607384740547</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="New random project">
+      <created>1609174158578</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609174158578</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +113,7 @@
     <MESSAGE value="Working out Bob's movements" />
     <MESSAGE value="Fixed moving" />
     <MESSAGE value="Added temp calcs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added temp calcs" />
+    <MESSAGE value="New random project" />
+    <option name="LAST_COMMIT_MESSAGE" value="New random project" />
   </component>
 </project>
